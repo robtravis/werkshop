@@ -1,0 +1,92 @@
+{
+  "version": "v1",
+  "blocklist": [],
+  "data": [
+    {
+      "schema_version": "1.0.0",
+      "id": "motionwerks",
+      "name": "Motionwerks",
+      "tagline": "Cue-based archviz phasing, plus Camerawerks shots",
+      "version": "1.0.0-beta.1",
+      "type": "add-on",
+      "maintainer": "Vivinel <rob@vivinel.com>",
+      "license": [
+        "SPDX:GPL-3.0-or-later"
+      ],
+      "blender_version_min": "5.2.0",
+      "website": "https://www.vivinel.com/",
+      "tags": [
+        "Animation",
+        "Camera"
+      ],
+      "archive_url": "./motionwerks-1.0.0-beta.1.zip",
+      "archive_size": 58969,
+      "archive_hash": "sha256:105d353a8be9f866cfaac92902f5f2e1034bf962434a2198a1ee932dd0b3bf1d"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "werkbench",
+      "name": "Werkbench",
+      "tagline": "Origin, align, transform and parametric primitives",
+      "version": "1.0.0-beta.1",
+      "type": "add-on",
+      "maintainer": "Vivinel <rob@vivinel.com>",
+      "license": [
+        "SPDX:GPL-3.0-or-later"
+      ],
+      "blender_version_min": "5.2.0",
+      "website": "https://www.vivinel.com/",
+      "tags": [
+        "Object",
+        "Modeling"
+      ],
+      "archive_url": "./werkbench-1.0.0-beta.1.zip",
+      "archive_size": 25338,
+      "archive_hash": "sha256:a9df5bee98f3ec9579f622c86b100dde0fcd1b2cacfd1abe24927f2529ad8fb5"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "sketchwerks",
+      "name": "Sketchwerks",
+      "tagline": "Realtime hand-drawn line art with Geometry Nodes",
+      "version": "1.0.0-beta.1",
+      "type": "add-on",
+      "maintainer": "Vivinel <rob@vivinel.com>",
+      "license": [
+        "SPDX:GPL-3.0-or-later"
+      ],
+      "blender_version_min": "4.2.0",
+      "website": "https://www.vivinel.com/",
+      "tags": [
+        "Render",
+        "Geometry Nodes",
+        "Material"
+      ],
+      "archive_url": "./sketchwerks-1.0.0-beta.1.zip",
+      "archive_size": 51301,
+      "archive_hash": "sha256:dbb3110c48590298fc963957e870199039142823e8faa630a7d3e763eafe0832"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "mographwerks",
+      "name": "Mographwerks",
+      "tagline": "C4D-style cloners, effectors and fields",
+      "version": "1.0.0-beta.1",
+      "type": "add-on",
+      "maintainer": "Vivinel <rob@vivinel.com>",
+      "license": [
+        "SPDX:GPL-3.0-or-later"
+      ],
+      "blender_version_min": "5.2.0",
+      "website": "https://www.vivinel.com/",
+      "tags": [
+        "Geometry Nodes",
+        "Object",
+        "Animation"
+      ],
+      "archive_url": "./mographwerks-1.0.0-beta.1.zip",
+      "archive_size": 251303,
+      "archive_hash": "sha256:b915dcf19be916a03748f521d73a52d0cd7ec9aec012ec9a1d85ca3fdbcb45b1"
+    }
+  ]
+}
