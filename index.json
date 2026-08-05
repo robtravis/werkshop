@@ -14,14 +14,14 @@
         "SPDX:GPL-3.0-or-later"
       ],
       "blender_version_min": "5.2.0",
-      "website": "https://robtravis.github.io/werkshop/docs/motionwerks.md",
+      "website": "https://robtravis.github.io/werkshop/docs/motionwerks.html",
       "tags": [
         "Animation",
         "Camera"
       ],
       "archive_url": "./motionwerks-1.0.0-beta.1.zip",
-      "archive_size": 58987,
-      "archive_hash": "sha256:8912f06ba14d1e414e4e183dc2073393f8477744b72b87bf54046a58ef542d6a"
+      "archive_size": 58989,
+      "archive_hash": "sha256:0260459794df5aab500d482052863033af4fc43a93e81f8d23276e51a56a933b"
     },
     {
       "schema_version": "1.0.0",
@@ -35,14 +35,14 @@
         "SPDX:GPL-3.0-or-later"
       ],
       "blender_version_min": "5.2.0",
-      "website": "https://robtravis.github.io/werkshop/docs/werkbench.md",
+      "website": "https://robtravis.github.io/werkshop/docs/werkbench.html",
       "tags": [
         "Object",
         "Modeling"
       ],
       "archive_url": "./werkbench-1.0.0-beta.1.zip",
-      "archive_size": 25357,
-      "archive_hash": "sha256:310f4c3552d184796a2e8a765228d6ba1b0deb03eef6cb383a40eb1fea4df5cf"
+      "archive_size": 25359,
+      "archive_hash": "sha256:c36302c9bc369f8d8530cb4b0497dba09638cd912df2660909cdc9fc84c303ba"
     },
     {
       "schema_version": "1.0.0",
@@ -56,15 +56,15 @@
         "SPDX:GPL-3.0-or-later"
       ],
       "blender_version_min": "4.2.0",
-      "website": "https://robtravis.github.io/werkshop/docs/sketchwerks.md",
+      "website": "https://robtravis.github.io/werkshop/docs/sketchwerks.html",
       "tags": [
         "Render",
         "Geometry Nodes",
         "Material"
       ],
       "archive_url": "./sketchwerks-1.0.0-beta.1.zip",
-      "archive_size": 51319,
-      "archive_hash": "sha256:b3bfa6b696ba9f3f1f6b17f70e0b8f710630a6688832f28bdf03e03a9a9e8bac"
+      "archive_size": 51320,
+      "archive_hash": "sha256:da60d2d90f187dfcd7d80eb0253a44d84580538f69de4a6036c5f5e5126919df"
     },
     {
       "schema_version": "1.0.0",
@@ -78,15 +78,15 @@
         "SPDX:GPL-3.0-or-later"
       ],
       "blender_version_min": "5.2.0",
-      "website": "https://robtravis.github.io/werkshop/docs/mographwerks.md",
+      "website": "https://robtravis.github.io/werkshop/docs/mographwerks.html",
       "tags": [
         "Geometry Nodes",
         "Object",
         "Animation"
       ],
       "archive_url": "./mographwerks-1.0.0-beta.1.zip",
-      "archive_size": 251321,
-      "archive_hash": "sha256:71dc727544d75bd4ba2bfe5bdfb183e379bf333e2616ac6f439b8cc63a2aebf1"
+      "archive_size": 251322,
+      "archive_hash": "sha256:2513d16d46fe75d333b72daf21484a57f58f9d51fb1333fb9a17ad83d0e25acc"
     }
   ]
 }
