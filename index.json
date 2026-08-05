@@ -14,14 +14,14 @@
         "SPDX:GPL-3.0-or-later"
       ],
       "blender_version_min": "5.2.0",
-      "website": "https://www.vivinel.com/",
+      "website": "https://robtravis.github.io/werkshop/docs/motionwerks.md",
       "tags": [
         "Animation",
         "Camera"
       ],
       "archive_url": "./motionwerks-1.0.0-beta.1.zip",
-      "archive_size": 58969,
-      "archive_hash": "sha256:105d353a8be9f866cfaac92902f5f2e1034bf962434a2198a1ee932dd0b3bf1d"
+      "archive_size": 58987,
+      "archive_hash": "sha256:8912f06ba14d1e414e4e183dc2073393f8477744b72b87bf54046a58ef542d6a"
     },
     {
       "schema_version": "1.0.0",
@@ -35,14 +35,14 @@
         "SPDX:GPL-3.0-or-later"
       ],
       "blender_version_min": "5.2.0",
-      "website": "https://www.vivinel.com/",
+      "website": "https://robtravis.github.io/werkshop/docs/werkbench.md",
       "tags": [
         "Object",
         "Modeling"
       ],
       "archive_url": "./werkbench-1.0.0-beta.1.zip",
-      "archive_size": 25338,
-      "archive_hash": "sha256:a9df5bee98f3ec9579f622c86b100dde0fcd1b2cacfd1abe24927f2529ad8fb5"
+      "archive_size": 25357,
+      "archive_hash": "sha256:310f4c3552d184796a2e8a765228d6ba1b0deb03eef6cb383a40eb1fea4df5cf"
     },
     {
       "schema_version": "1.0.0",
@@ -56,15 +56,15 @@
         "SPDX:GPL-3.0-or-later"
       ],
       "blender_version_min": "4.2.0",
-      "website": "https://www.vivinel.com/",
+      "website": "https://robtravis.github.io/werkshop/docs/sketchwerks.md",
       "tags": [
         "Render",
         "Geometry Nodes",
         "Material"
       ],
       "archive_url": "./sketchwerks-1.0.0-beta.1.zip",
-      "archive_size": 51301,
-      "archive_hash": "sha256:dbb3110c48590298fc963957e870199039142823e8faa630a7d3e763eafe0832"
+      "archive_size": 51319,
+      "archive_hash": "sha256:b3bfa6b696ba9f3f1f6b17f70e0b8f710630a6688832f28bdf03e03a9a9e8bac"
     },
     {
       "schema_version": "1.0.0",
@@ -78,15 +78,15 @@
         "SPDX:GPL-3.0-or-later"
       ],
       "blender_version_min": "5.2.0",
-      "website": "https://www.vivinel.com/",
+      "website": "https://robtravis.github.io/werkshop/docs/mographwerks.md",
       "tags": [
         "Geometry Nodes",
         "Object",
         "Animation"
       ],
       "archive_url": "./mographwerks-1.0.0-beta.1.zip",
-      "archive_size": 251303,
-      "archive_hash": "sha256:b915dcf19be916a03748f521d73a52d0cd7ec9aec012ec9a1d85ca3fdbcb45b1"
+      "archive_size": 251321,
+      "archive_hash": "sha256:71dc727544d75bd4ba2bfe5bdfb183e379bf333e2616ac6f439b8cc63a2aebf1"
     }
   ]
 }
