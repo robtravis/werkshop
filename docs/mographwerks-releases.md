@@ -4,6 +4,58 @@
 
 ---
 
+## 1.0.0-beta.26
+
+**Updating:** **Edit ▸ Preferences ▸ Get Extensions ▸ Check for Updates**. Nothing to download
+by hand.
+
+### Freeze, and Convert to Mesh
+
+Two new buttons at the bottom of the panel, and they do different things.
+
+**Freeze** bakes the clones exactly as they are — effectors and fields applied — so they stop
+responding to changes. Instancing is kept, so a heavy scene does not blow up, the cloner stays
+editable underneath, and **Unfreeze** brings it back. The bake is saved in your .blend, so it
+survives closing and reopening the file.
+
+Use it to hold a result you like while you carry on working around it.
+
+**Convert to Mesh** flattens the whole stack into plain mesh data — effectors baked in, no
+modifiers left. Your source objects and the cloner's collection are kept, not deleted. This one
+cannot be undone except with Undo.
+
+Both work through nested cloners, and Convert captures **the frame you are parked on**. You do
+not need to Freeze before converting; they are independent.
+
+> If you have been trying `Object ▸ Convert ▸ Mesh` on a cloner and getting an empty mesh —
+> that is why. A cloner's geometry is instances, not mesh, so Blender's own Convert copies
+> nothing. The new button adds the missing Realize step for you. Apologies: an earlier note
+> here said Convert alone was enough. It is not.
+
+### Cloning a cloner — From Object
+
+**Add a Cloner** now has a **From Object** picker beside From Collection. Point it at any object
+— including another cloner — and the buttons build a cloner of that, where it stands.
+
+**This is now the right way to nest cloners.** Previously the only route was pointing an outer
+cloner at the inner one's *collection*, and that collection also holds the inner cloner's field
+gizmos — so your fields got cloned as geometry and appeared to wander when you changed spacing.
+From Object clones the cloner and leaves its fields alone. If you have a setup doing this, the
+Source panel now warns you and points at the fix.
+
+Nesting through Object works to at least three levels; an old note in the panel claimed
+otherwise and was wrong.
+
+### Smaller
+
+- "From Collection" is no longer truncated to "From Collecti…".
+- The Color effector's buttons no longer clip in a narrow sidebar, and their explanation moved
+  into tooltips.
+- **Add Field ▸ Use Existing** lets a second effector read a field that already exists, instead
+  of making one you then have to swap away.
+
+---
+
 ## 1.0.0-beta.23
 
 **Updating:** you already have the repository, so **Edit ▸ Preferences ▸ Get Extensions ▸
@@ -83,10 +135,9 @@ last cloner you had selected; the Color effector's buttons no longer clip in a n
 - **Custom falloff curves** work on a field's Shape and Ease. Not yet on the Step effector's
   ramp, the Random distribution, density along a Curve cloner, or the Push Apart response.
 - **Four fields per effector** is the maximum.
-- **Realize Instances is deliberately not built.** `Object ▸ Convert ▸ Mesh` already realizes a
-  cloner for export or booleans, and instances render fine as they are. The only thing it would
-  add is keeping the cloner *live* while you stack a Boolean or Remesh after it — if you want
-  that, say so.
+- **Live downstream modifiers.** There is no managed Realize modifier, so you cannot keep a
+  cloner *live* while stacking a Boolean or Remesh after it. Use **Convert to Mesh** (below) and
+  work on the result — if you need it live, say so.
 
 ---
 
