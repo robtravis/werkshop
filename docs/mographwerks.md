@@ -104,6 +104,8 @@ Elastic, Bounce — each with In / Out / In-Out, plus Exponent, Base, Size, Boun
 
 ## Beta notes
 
+- **[What's new in beta.23](mographwerks-releases.md)** — the Color effector, shared fields,
+  and the field-space fix.
 - Blender **5.2** or newer.
 - 20,000 clones with a field, an ease and two effectors re-evaluate in about **1.7 ms**
   (modifier evaluation; viewport drawing is on top of that).
