@@ -50,7 +50,7 @@
       "id": "mographwerks",
       "name": "Mographwerks",
       "tagline": "C4D-style cloners, effectors and fields",
-      "version": "1.0.0-beta.26",
+      "version": "1.0.0-beta.27",
       "type": "add-on",
       "maintainer": "Rob Travis <rob@vivinel.com>",
       "license": [
@@ -63,9 +63,9 @@
         "Object",
         "Animation"
       ],
-      "archive_url": "./mographwerks-1.0.0-beta.26.zip",
-      "archive_size": 301008,
-      "archive_hash": "sha256:7f085ee88fea4917d1bafba940a0b55f1148969639addd89fa61b3f1fd6ab633"
+      "archive_url": "./mographwerks-1.0.0-beta.27.zip",
+      "archive_size": 303253,
+      "archive_hash": "sha256:63d8a8b3151bdf95b5c2d2c4eaa18be21dfae2c53302dd9fda836c5aaf76ec74"
     },
     {
       "schema_version": "1.0.0",

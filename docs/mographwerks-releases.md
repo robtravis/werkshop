@@ -4,6 +4,25 @@
 
 ---
 
+## 1.0.0-beta.27
+
+**Updating:** **Edit ▸ Preferences ▸ Get Extensions ▸ Check for Updates**.
+
+Everything in beta.26 below, plus:
+
+- **From Object hides the original**, the way cloning a selection or a collection already did.
+  Remove Cloner brings it back. An object you had already hidden yourself is left alone.
+- **The new collection is created where the source lived**, rather than one level up.
+- **Nested cloners now update all the way to the top.** A change deep in a chain used to
+  refresh only the cloner directly above it, leaving everything higher showing a stale result
+  until some unrelated edit forced a rebuild. That is what made deep nesting look like it had
+  a level limit. It does not — nesting works to at least six levels; what runs away is the
+  **count**, since every level multiplies. Four levels of 4×4 is 65,536 clones.
+- The Source panel warns if a cloner has ended up **inside its own source collection**, which
+  produces no clones at all and has no other symptom.
+
+---
+
 ## 1.0.0-beta.26
 
 **Updating:** **Edit ▸ Preferences ▸ Get Extensions ▸ Check for Updates**. Nothing to download
