@@ -2,14 +2,14 @@
 
 Blender add-ons for archviz, by [Vivinel](https://www.vivinel.com/).
 
-> ⚠ **Beta 1.** Expect changes. Blender **5.2** or newer.
+> ⚠ **Beta.** Expect changes. Blender **5.2** or newer.
 
 | | |
 |---|---|
 | **[Werkbench](docs/werkbench.md)** | Origin, align, transform and parametric primitives |
 | **[Mographwerks](docs/mographwerks.md)** | C4D-style cloners, effectors and fields |
 | **[Motionwerks](docs/motionwerks.md)** | Cue-based archviz phasing, triggered on markers |
-| **[Camerawerks](docs/camerawerks.md)** | Shot-based camera moves *(ships with Motionwerks)* |
+| **[Camerawerks](docs/camerawerks.md)** | Shot-based camera moves *(the Camera half of the Motionwerks tab)* |
 | **[Sketchwerks](docs/sketchwerks.md)** | Realtime hand-drawn line art |
 
 ---
@@ -33,8 +33,10 @@ Add the repository once; from then on updates arrive through Blender.
 ### Sidebar tab order
 
 Blender orders sidebar tabs by the order add-ons are *enabled*, and gives an add-on no way to
-ask for a position. To get **Werkbench · Mographwerks · Motionwerks · Camerawerks ·
-Sketchwerks**, enable them in that order, then **Preferences ▸ ☰ ▸ Save Preferences**.
+ask for a position. To get **Werkbench · Mographwerks · Motionwerks · Sketchwerks**, enable
+them in that order, then **Preferences ▸ ☰ ▸ Save Preferences**.
+
+*Camerawerks has no tab of its own — it is the Camera half of the Motionwerks tab.*
 
 ### If you already have a manually-installed copy
 

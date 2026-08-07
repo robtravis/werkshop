@@ -4,27 +4,6 @@
   "data": [
     {
       "schema_version": "1.0.0",
-      "id": "motionwerks",
-      "name": "Motionwerks",
-      "tagline": "Cue-based archviz phasing, plus Camerawerks shots",
-      "version": "1.0.0-beta.1",
-      "type": "add-on",
-      "maintainer": "Vivinel <rob@vivinel.com>",
-      "license": [
-        "SPDX:GPL-3.0-or-later"
-      ],
-      "blender_version_min": "5.2.0",
-      "website": "https://robtravis.github.io/werkshop/docs/motionwerks.html",
-      "tags": [
-        "Animation",
-        "Camera"
-      ],
-      "archive_url": "./motionwerks-1.0.0-beta.1.zip",
-      "archive_size": 58989,
-      "archive_hash": "sha256:0260459794df5aab500d482052863033af4fc43a93e81f8d23276e51a56a933b"
-    },
-    {
-      "schema_version": "1.0.0",
       "id": "werkbench",
       "name": "Werkbench",
       "tagline": "Origin, align, transform and parametric primitives",
@@ -87,6 +66,27 @@
       "archive_url": "./mographwerks-1.0.0-beta.23.zip",
       "archive_size": 296307,
       "archive_hash": "sha256:1988be148ccc7fe836a5e4d3c5af071e55101df7060ef4117dff8bd80040e6ca"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "motionwerks",
+      "name": "Motionwerks",
+      "tagline": "Cue-based archviz phasing, plus Camerawerks shots",
+      "version": "1.0.0-beta.16",
+      "type": "add-on",
+      "maintainer": "Vivinel <rob@vivinel.com>",
+      "license": [
+        "SPDX:GPL-3.0-or-later"
+      ],
+      "blender_version_min": "5.2.0",
+      "website": "https://robtravis.github.io/werkshop/docs/motionwerks.html",
+      "tags": [
+        "Animation",
+        "Camera"
+      ],
+      "archive_url": "./motionwerks-1.0.0-beta.16.zip",
+      "archive_size": 70566,
+      "archive_hash": "sha256:3edf3914403c0fcafacc767339759ed6af31fbe8c442163098e3ade266b1a0a8"
     }
   ]
 }
