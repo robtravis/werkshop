@@ -72,7 +72,7 @@
       "id": "motionwerks",
       "name": "Motionwerks",
       "tagline": "Cue-based archviz phasing, plus Camerawerks shots",
-      "version": "1.0.0-beta.16",
+      "version": "1.0.0-beta.17",
       "type": "add-on",
       "maintainer": "Vivinel <rob@vivinel.com>",
       "license": [
@@ -84,9 +84,9 @@
         "Animation",
         "Camera"
       ],
-      "archive_url": "./motionwerks-1.0.0-beta.16.zip",
-      "archive_size": 70566,
-      "archive_hash": "sha256:3edf3914403c0fcafacc767339759ed6af31fbe8c442163098e3ade266b1a0a8"
+      "archive_url": "./motionwerks-1.0.0-beta.17.zip",
+      "archive_size": 71017,
+      "archive_hash": "sha256:0d479f0a1f2e8a87edb8f5635c93307dc4c15da9ca8ec0fb9617cd857da3569c"
     }
   ]
 }

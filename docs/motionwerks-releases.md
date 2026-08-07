@@ -1,8 +1,8 @@
 # Motionwerks — release notes
 
-## Beta 16
+## Beta 17
 
-**For Blender 5.2.** This build supersedes Beta 1, which is what everyone is on. Sixteen
+**For Blender 5.2.** This build supersedes Beta 1, which is what everyone is on. Seventeen
 builds went into it in one pass, so the notes below are cumulative rather than a changelog.
 
 The short version: **Motionwerks and Camerawerks are now one tab**, and the two halves have
@@ -14,7 +14,7 @@ been rebuilt to look and behave the same way.
 
 You already have the Werkshop repository, so there is nothing to download and nothing to
 uninstall. **Edit ▸ Preferences ▸ Get Extensions ▸ Check for Updates** and Motionwerks will
-offer beta.16.
+offer beta.17.
 
 *(If you don't have the repository yet, add it once — Preferences ▸ Get Extensions ▸
 Repositories ▸ + ▸ Add Remote Repository, URL `https://robtravis.github.io/werkshop/index.json`,
@@ -103,6 +103,8 @@ in the timeline and re-point the cues that went astray.
   remove a cue.
 - A shot bumped off an occupied frame was labelled with the frame it *asked* for rather than
   the one it got.
+- **Add Move** could fail with *"MW_ShotPG is not in list"* — it held on to the source shot
+  across adding the new one, and Blender is free to move the list in memory when it grows.
 - The marker badge is gone from shot rows. It meant "this shot follows a marker" — true of
   every shot now, so it said nothing. The **Follows** field still names which one.
 - The mystery `—` beside each action is gone. It now reads `0/3`, `2/3` and so on, or nothing
