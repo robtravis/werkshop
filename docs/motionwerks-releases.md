@@ -1,5 +1,48 @@
 # Motionwerks — release notes
 
+## Beta 21
+
+**For Blender 5.2.** A bug-fix build on top of Beta 20, plus a new Health Check.
+
+---
+
+## Two fixes
+
+**Syncing a cue left its visibility behind.** Motion lives on an invisible anchor, but Visibility
+Cut keys "hidden" and "visible" on the object itself. Sync moved the anchor and not those keys —
+so after moving a marker, objects animated at the new time while staying hidden on the old
+schedule. Everything is invisible exactly when it should be building, which looks like the cue
+simply didn't move. If you have ever moved a marker and thought Sync did nothing, this was why.
+
+**Dragging a duration bar re-keyed the cue on every mouse-move.** With Auto Apply on, each
+movement triggered a full rebuild of every anchor in the cue — hundreds of times per drag.
+Unusable past about twenty objects, and it could leave objects stranded mid-animation. The drag
+already committed once when you released; the rest was waste.
+
+---
+
+## Health Check
+
+A new button under Apply Cue. It looks for the faults that make no noise:
+
+- **objects that never become visible** — scaled to nothing, so they animate perfectly and
+  render as nothing at all
+- objects with no anchor, so nothing is driving them
+- objects listed in a cue that have left its collection, which the next Apply will drop
+- objects sitting in the collection that never joined the cue's list
+- Visibility Cut switched on with no hide keys written
+- visibility out of step with the motion
+- animation that doesn't match what the settings predict, or a cue sitting off its marker
+- empty cues, and duplicate marker names
+
+Problems are listed above warnings, each naming the cue and object.
+
+Most of these it cannot repair for you — an object parked at zero scale has no original size
+recorded anywhere in the file. What it can do is tell you before you render, instead of after
+you deliver.
+
+---
+
 ## Beta 20
 
 **For Blender 5.2.** Supersedes Beta 17. Three builds went out in a day — 18, 19 and 20 — so

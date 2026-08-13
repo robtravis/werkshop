@@ -50,7 +50,7 @@
       "id": "motionwerks",
       "name": "Motionwerks",
       "tagline": "Cue-based staged animation, plus Camerawerks shots",
-      "version": "1.0.0-beta.20",
+      "version": "1.0.0-beta.21",
       "type": "add-on",
       "maintainer": "Rob Travis <rob@vivinel.com>",
       "license": [
@@ -62,9 +62,9 @@
         "Animation",
         "Camera"
       ],
-      "archive_url": "./motionwerks-1.0.0-beta.20.zip",
-      "archive_size": 85973,
-      "archive_hash": "sha256:8af0c8b5c551b6d09c2a7da5eadb6a8e4ed13b5ea8b8bd59bf5a0c076ff2a9ce"
+      "archive_url": "./motionwerks-1.0.0-beta.21.zip",
+      "archive_size": 89857,
+      "archive_hash": "sha256:de6d6d8b94a4b739244da7b03a85fb80c58f8c57851b7d15522b9c3ce565f517"
     },
     {
       "schema_version": "1.0.0",
