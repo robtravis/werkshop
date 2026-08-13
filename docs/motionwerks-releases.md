@@ -1,5 +1,108 @@
 # Motionwerks — release notes
 
+## Beta 20
+
+**For Blender 5.2.** Supersedes Beta 17. Three builds went out in a day — 18, 19 and 20 — so
+these notes cover all of them.
+
+The short version: **two bugs that were damaging real work are fixed**, and the Duration /
+Timing / Spacing panel now works the way you would expect, with the cue's span draggable
+directly in the Timeline.
+
+---
+
+## Updating
+
+Nothing to download and nothing to uninstall. **Edit ▸ Preferences ▸ Get Extensions ▸ Check for
+Updates** and Motionwerks will offer beta.20.
+
+**Your existing cues open unchanged.** Two settings changed how they are stored, and both
+migrate automatically when the file loads — your Spacing and Timing values come across exactly
+as they were.
+
+---
+
+## Two bugs worth knowing about
+
+**Applying a cue could crash Blender.** Every Apply deleted and recreated the invisible anchor
+each object animates from. If Blender still held a reference to one of those, the next
+depsgraph update walked into freed memory. This was not rare and not new — it fired on every
+Apply, and re-applying is something you do constantly. Anchors are now reused in place.
+
+**Editing one object's motion rewrote every cue using the same preset.** If an object had its
+own preset, the Motion sliders were editing the *library preset itself* — so nudging Scale
+Frames for one object silently changed every other cue and object using that preset. Each
+object now carries its own copy; the preset name records where the settings came from.
+
+If a recent project behaved oddly — objects changing when you did not touch them, or cues
+drifting out of step — those two are the likely cause.
+
+---
+
+## Duration bars in the Timeline
+
+Each cue now draws as a coloured bar in the Timeline and Dope Sheet, using the colour you gave
+its collection. Overlapping cues stack onto separate rows, which makes a cue that starts inside
+another one obvious at a glance.
+
+**Grab the right-hand end and drag to retime the cue.**
+
+- **Drag** holds Timing steady and spreads or tightens the Spacing. Each object animates at the
+  same speed; the build bunches up or spreads out.
+- **Shift-drag** holds Spacing and changes Timing. The stagger rhythm stays; every object speeds
+  up or slows down.
+
+The header shows Duration, Timing and Spacing live while you drag, and says which one is giving.
+One undo step per drag, so Ctrl+Z puts back the numbers and the keyframes together.
+
+Turn the bars off with **Drag in Timeline** in the Motion panel.
+
+---
+
+## The panel inverted: Timing is typed, Duration is shown
+
+**This is the biggest visible change.** Previously you typed Duration and Timing was a readout.
+Now it is the other way round:
+
+- **Timing** — how long each object's own motion lasts. Type it.
+- **Spacing** — the gap between consecutive objects. Type it.
+- **Duration** — the overall build. Shown greyed, because you drag it on the Timeline bar.
+
+They are three views of one schedule: `Duration = (objects − 1) × Spacing + Timing`. Only two can
+be set independently, and the two you now set are the two you cannot get at any other way.
+
+**So editing Spacing now changes Duration**, where it used to hold Duration and change Timing.
+
+**Spacing accepts fractions.** It had to: holding Timing steady while dragging needs a spacing
+of 9.2 frames, and rounding to whole frames made Timing jump around by several frames instead of
+holding still.
+
+---
+
+## Auto Apply
+
+**Panel changes now take effect immediately** — Timing, Spacing, Curve, Easing and the whole
+Scale / Move / Rotation block. No more pressing Apply Cue to see what you changed.
+
+It is a toggle on the Apply Cue row, on by default. **Turn it off on a heavy cue**: a number
+field updates on every increment while you drag it, not once when you let go, so a single slider
+drag can be dozens of re-keys. Apply Cue is still there, greyed while Auto Apply is on.
+
+---
+
+## Smaller fixes
+
+- Objects left permanently hidden, or stuck at zero scale, after a cue was edited — clearing an
+  animation channel did not restore the value it had been driving.
+- Objects losing their size when a cue was applied, from a measurement taken before Blender had
+  finished updating.
+- Deleting a saved preset no longer changes the cues that referenced it — they keep their own
+  settings.
+- Shift-drag on a duration bar now works from the first click.
+- Corrected the add-on's tagline and maintainer, which still showed the old branding.
+
+---
+
 ## Beta 17
 
 **For Blender 5.2.** This build supersedes Beta 1, which is what everyone is on. Seventeen

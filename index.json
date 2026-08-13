@@ -25,27 +25,6 @@
     },
     {
       "schema_version": "1.0.0",
-      "id": "motionwerks",
-      "name": "Motionwerks",
-      "tagline": "Cue-based staged animation, plus Camerawerks shots",
-      "version": "1.0.0-beta.19",
-      "type": "add-on",
-      "maintainer": "Rob Travis <rob@vivinel.com>",
-      "license": [
-        "SPDX:GPL-3.0-or-later"
-      ],
-      "blender_version_min": "5.2.0",
-      "website": "https://robtravis.github.io/werkshop/docs/motionwerks.html",
-      "tags": [
-        "Animation",
-        "Camera"
-      ],
-      "archive_url": "./motionwerks-1.0.0-beta.19.zip",
-      "archive_size": 76733,
-      "archive_hash": "sha256:a7159fa33920b366f170ea942e39faa1eee25ea3b68e994c55b70cd64dd506fe"
-    },
-    {
-      "schema_version": "1.0.0",
       "id": "sketchwerks",
       "name": "Sketchwerks",
       "tagline": "Realtime hand-drawn line art with Geometry Nodes",
@@ -65,6 +44,27 @@
       "archive_url": "./sketchwerks-1.0.0-beta.1.zip",
       "archive_size": 51320,
       "archive_hash": "sha256:da60d2d90f187dfcd7d80eb0253a44d84580538f69de4a6036c5f5e5126919df"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "motionwerks",
+      "name": "Motionwerks",
+      "tagline": "Cue-based staged animation, plus Camerawerks shots",
+      "version": "1.0.0-beta.20",
+      "type": "add-on",
+      "maintainer": "Rob Travis <rob@vivinel.com>",
+      "license": [
+        "SPDX:GPL-3.0-or-later"
+      ],
+      "blender_version_min": "5.2.0",
+      "website": "https://robtravis.github.io/werkshop/docs/motionwerks.html",
+      "tags": [
+        "Animation",
+        "Camera"
+      ],
+      "archive_url": "./motionwerks-1.0.0-beta.20.zip",
+      "archive_size": 85973,
+      "archive_hash": "sha256:8af0c8b5c551b6d09c2a7da5eadb6a8e4ed13b5ea8b8bd59bf5a0c076ff2a9ce"
     },
     {
       "schema_version": "1.0.0",
