@@ -4,6 +4,32 @@
 
 ---
 
+## 1.0.0-beta.28
+
+**Updating:** **Edit ▸ Preferences ▸ Get Extensions ▸ Check for Updates**.
+
+### In Place — effect objects without cloning them
+
+A new cloner mode: **In Place**. Point it at a collection and it makes no copies and moves
+nothing. Every object stays exactly where you put it, and effectors and fields then act on
+them **individually**.
+
+This is the one you want for text. Put your characters in a collection, add a cloner in In
+Place mode, add an effector and a field, and the field sweeps across the letters where they
+already sit — no re-spacing, no rebuilding your layout as a grid.
+
+It is not only for text: hand-placed debris, an imported assembly, anything you have arranged
+deliberately and want to animate with fields without giving up the arrangement.
+
+Notes:
+
+- It follows the collection. Add an object and it joins in; remove one and it leaves.
+- Your objects are never moved, renamed or reparented.
+- **Moving the cloner does not move the group** — In Place means in place. To move things,
+  move the objects, or use one of the other modes.
+
+---
+
 ## 1.0.0-beta.27
 
 **Updating:** **Edit ▸ Preferences ▸ Get Extensions ▸ Check for Updates**.

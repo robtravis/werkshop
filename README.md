@@ -1,6 +1,6 @@
 # Werkshop
 
-Blender add-ons for archviz, by [Vivinel](https://www.vivinel.com/).
+Blender add-ons for motion design, by [Rob Travis](https://github.com/robtravis).
 
 > ⚠ **Beta.** Expect changes. Blender **5.2** or newer.
 
@@ -8,7 +8,7 @@ Blender add-ons for archviz, by [Vivinel](https://www.vivinel.com/).
 |---|---|
 | **[Werkbench](docs/werkbench.md)** | Origin, align, transform and parametric primitives |
 | **[Mographwerks](docs/mographwerks.md)** | C4D-style cloners, effectors and fields |
-| **[Motionwerks](docs/motionwerks.md)** | Cue-based archviz phasing, triggered on markers |
+| **[Motionwerks](docs/motionwerks.md)** | Cue-based staged animation, triggered on markers |
 | **[Camerawerks](docs/camerawerks.md)** | Shot-based camera moves *(the Camera half of the Motionwerks tab)* |
 | **[Sketchwerks](docs/sketchwerks.md)** | Realtime hand-drawn line art |
 

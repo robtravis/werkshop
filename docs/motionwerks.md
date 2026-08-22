@@ -1,7 +1,7 @@
 # Motionwerks
 
-**Archviz phasing.** Numbered "cue" collections that trigger on timeline markers — a building
-assembling itself, a renovation revealing in stages, a walkthrough narrated by voiceover.
+**Staged build animation.** Numbered "cue" collections that trigger on timeline markers — a
+product assembling itself, a building revealing in stages, a sequence timed to voiceover.
 
 Sidebar tab: **Motionwerks**, with a **Cues / Camera** switch at the top. The Camera half is
 **[Camerawerks](camerawerks.md)** — same install, same tab.
