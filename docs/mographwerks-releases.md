@@ -4,6 +4,58 @@
 
 ---
 
+## 1.0.0-beta.29
+
+**Updating:** **Edit ▸ Preferences ▸ Get Extensions ▸ Check for Updates**.
+
+> ⚠️ **Read this before updating if you have a project in progress.**
+> This release changes how fields are polarised, and that affects **files you have already
+> saved**. If you are mid-job, finish it on beta.28 and update afterwards.
+
+### Field polarity is now consistent
+
+Sphere and Box are distance functions — they read 0 at their centre. Every ramp and pattern
+type reads the opposite way. That disagreement was the only reason **Field Invert** defaulted
+to ON: one checkbox quietly compensating for two conventions.
+
+It also meant **Linear arrived backwards**, and **Ring arrived dead** — all zeros, every time.
+
+Both conventions are now normalised, and **Field Invert defaults to OFF**.
+
+**What this does to existing files.** A field gizmo stores only its type, so the *default* is
+what every field in an already-saved file evaluates as when you open it:
+
+- **Sphere and Box are unaffected** — their two flips cancel out.
+- **Linear, Ring, Radial, Waves, Voronoi and Noise will flip.**
+
+There is no migration. If a saved project relies on one of those field types, opening it on
+beta.29 will look inverted. Tick or untick **Field Invert** on the effector to put it back.
+
+### Visibility effector (prototype)
+
+A sixth effector type. Instead of scaling clones to zero, it **deletes** them, so a hidden
+clone costs nothing to evaluate or render.
+
+- **Hide Threshold** — a clone goes when Strength × field exceeds this.
+- **Hide Random** — swaps that for a per-clone random number, so the field drives the
+  *density* of a random hide rather than a hard cutoff.
+
+Measured on 50 clones, Strength 0 / .2 / .4 / .6 / .8 / 1 leaves 50 / 40 / 33 / 23 / 10 / 0.
+
+> ⚠️ **It renumbers.** Deleting instances changes the clone count, so any effector **below**
+> it re-deals — in testing, 20 of 25 surviving clones landed on a different index. Put the
+> Visibility effector **last** in the stack unless you specifically want that reshuffle.
+
+This one is a prototype. It works, but expect it to move.
+
+### MoType
+
+3D type and logos with a style block, style presets, and Align X / Align Y. The bevel
+behaviour was also fixed — the artefact turned out to be a topology problem rather than a
+bevel one.
+
+---
+
 ## 1.0.0-beta.28
 
 **Updating:** **Edit ▸ Preferences ▸ Get Extensions ▸ Check for Updates**.
