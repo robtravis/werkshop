@@ -89,11 +89,23 @@ Objects draw themselves on in sequence, and each starts occluding once it has be
 2. Create a line set for it.
 3. Press **Make Build-On**.
 4. Keyframe **Draw Amount** 0 to 1, with **Linear** keys.
+5. Press **Make Build-On** again, now that the keys exist.
 
 Make Build-On enables the draw-on and its occlusion matte, and sizes the stroke ordering to
 the object. The matte dissolves in on its own as the drawing completes, so a build-on only
 begins hiding the background once it exists. **Fade** sets how long that dissolve takes and
 **Finish Early** lands it before the final strokes.
+
+Both are fractions of the draw, so the same number lasts longer on a longer stage. On a 15
+frame stage a Fade of 0.1 is a frame and a half, and since the fill renders dithered, that
+one in-between frame reads as a flash. The second press of Make Build-On sizes Fade and
+Finish Early from the keys you just set, which is why it is worth running twice.
+
+Exclude every source collection from the View Layer. That is what makes a line set read as a
+drawing rather than shaded geometry with lines on top. Miss one and, on a transparent film
+with nothing lighting it, that collection renders as a solid black shape over the artwork.
+The line art itself is unaffected, because it reads collection membership rather than the
+View Layer.
 
 Do not also make the parent a line set. An object in two line-set sources is drawn twice.
 
@@ -120,9 +132,11 @@ Line art on a real building is heavy. In order of effect:
 ## Check Setup
 
 **Check Setup** scans every line set and warns about configurations that are known to look
-broken: a build-on that will strobe on a moving camera, a build-on that cannot occlude, a fill
-on a static set that can z-fight, a holdout with an opaque film, alpha dropped on save,
-geometry drawn twice, and eased draw-on keys.
+broken: a build-on that will strobe on a moving camera, a build-on that cannot occlude, a
+build-on that occludes before it draws, a fill on a static set that can z-fight, a holdout
+with an opaque film, alpha dropped on save, geometry drawn twice, a source collection left in
+the View Layer while the others are excluded, a set pointed at no occluder collection, and
+eased draw-on keys.
 
 It only reports. It never changes anything. Run it after setting a scene up, and again before
 rendering.
@@ -148,6 +162,9 @@ rendering.
 - After updating, press **Update Node Group** in the panel header. It regenerates the node
   group from the new code while keeping every line set's settings, materials and keyframes.
   Sockets added in a new version only appear after this runs.
+- **Beta 3** changes the `Matte Fade` default from 0.1 to 0.25 and has Make Build-On size
+  the matte dissolve from your keyframes. Existing line sets keep whatever they are set to;
+  press Make Build-On again on a build-on that flashes.
 - **Freeze Lines was removed in Beta 2.** Detail Limit made it unnecessary, and a frozen set
   showed a stale drawing while you worked. Files saved with a frozen set are restored
   automatically on load.
