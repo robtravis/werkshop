@@ -25,28 +25,6 @@
     },
     {
       "schema_version": "1.0.0",
-      "id": "sketchwerks",
-      "name": "Sketchwerks",
-      "tagline": "Realtime hand-drawn line art with Geometry Nodes",
-      "version": "1.0.0-beta.3",
-      "type": "add-on",
-      "maintainer": "Vivinel <rob@vivinel.com>",
-      "license": [
-        "SPDX:GPL-3.0-or-later"
-      ],
-      "blender_version_min": "4.2.0",
-      "website": "https://robtravis.github.io/werkshop/docs/sketchwerks.html",
-      "tags": [
-        "Render",
-        "Geometry Nodes",
-        "Material"
-      ],
-      "archive_url": "./sketchwerks-1.0.0-beta.3.zip",
-      "archive_size": 70564,
-      "archive_hash": "sha256:704ac5f6b76d126d6f063f1fb5c2468ff610e86a5621f9ccacbbf8adf52512d0"
-    },
-    {
-      "schema_version": "1.0.0",
       "id": "motionwerks",
       "name": "Motionwerks",
       "tagline": "Cue-based staged animation, plus Camerawerks shots",
@@ -65,6 +43,28 @@
       "archive_url": "./motionwerks-1.0.0-beta.21.zip",
       "archive_size": 89857,
       "archive_hash": "sha256:de6d6d8b94a4b739244da7b03a85fb80c58f8c57851b7d15522b9c3ce565f517"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "sketchwerks",
+      "name": "Sketchwerks",
+      "tagline": "Realtime hand-drawn line art with Geometry Nodes",
+      "version": "1.0.0-beta.4",
+      "type": "add-on",
+      "maintainer": "Vivinel <rob@vivinel.com>",
+      "license": [
+        "SPDX:GPL-3.0-or-later"
+      ],
+      "blender_version_min": "4.2.0",
+      "website": "https://robtravis.github.io/werkshop/docs/sketchwerks.html",
+      "tags": [
+        "Render",
+        "Geometry Nodes",
+        "Material"
+      ],
+      "archive_url": "./sketchwerks-1.0.0-beta.4.zip",
+      "archive_size": 71854,
+      "archive_hash": "sha256:4cf31556aa188c04490c76f06538573538786a07eb0a668cf94665fa0b95afd6"
     },
     {
       "schema_version": "1.0.0",

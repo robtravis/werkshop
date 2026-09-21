@@ -162,6 +162,12 @@ rendering.
 - After updating, press **Update Node Group** in the panel header. It regenerates the node
   group from the new code while keeping every line set's settings, materials and keyframes.
   Sockets added in a new version only appear after this runs.
+- **Beta 4** reveals the matte spatially instead of fading it. The dissolve raises a
+  threshold against a world-locked noise pattern, so the matte is always fully opaque or
+  fully clear and fills in region by region as the drawing lands. Fading it could not work:
+  the fill renders dithered, and dithered resolves partial opacity by randomly keeping or
+  discarding pixels, so a half-faded matte arrived as an opaque noise plate over the
+  artwork. Press **Update Node Group** to pick it up.
 - **Beta 3** changes the `Matte Fade` default from 0.1 to 0.25 and has Make Build-On size
   the matte dissolve from your keyframes. Existing line sets keep whatever they are set to;
   press Make Build-On again on a build-on that flashes.
