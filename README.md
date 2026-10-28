@@ -12,6 +12,12 @@ Blender add-ons for motion design, by [Rob Travis](https://github.com/robtravis)
 | **[Camerawerks](docs/camerawerks.md)** | Shot-based camera moves *(the Camera half of the Motionwerks tab)* |
 | **[Sketchwerks](docs/sketchwerks.md)** | Realtime hand-drawn line art |
 
+### For Cinema 4D
+
+| | |
+|---|---|
+| **[Archwerks](docs/archwerks.md)** | Parametric walls, windows, doors, roofs, stairs and cabinets *(a plugin, installed by hand)* |
+
 ---
 
 ## Install
