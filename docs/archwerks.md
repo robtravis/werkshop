@@ -7,7 +7,25 @@ can type into.**
 > ⚠ **Beta.** Expect changes. Cinema 4D **2027** (macOS or Windows). Units follow your
 > preferences.
 
-**[Download Archwerks 0.55.0 for Cinema 4D](../c4d/Archwerks-0.55.0-c4d.zip)**
+**[Download Archwerks 0.57.0 for Cinema 4D](../c4d/Archwerks-0.57.0-c4d.zip)**
+
+![A house built with Archwerks in Cinema 4D: walls, a hip roof with dimensional shingles, double-hung windows, an exterior door and a garage door](img/archwerks/house.png)
+
+*Every piece above is an Archwerks object: walls from a footprint spline, the floor and roof from
+those walls, and each window and door placed with a click.*
+
+### New in 0.57.0
+
+- **Garage doors.** A sectional overhead door with a door Type of its own: sections up a cased
+  opening, each with a row of panels (raised, bevelled, flush, or glass in the top section).
+  On the door card as Operation **Garage**, plus two presets: **Garage door** (16 x 7) and
+  **Single garage door** (9 x 7).
+- **Roofs:** tiles on by default in a new **Dimensional Shingle** model, valley covers, and a
+  starter strip under the overhang.
+- **Windows:** **Count** and **Spacing** for a row of windows, and heads at 6'8".
+- **Doors:** a knob by default, and a hinge that swings a leaf clear to 180.
+- **Fixes:** crisp shading in Cinema 4D, faster window placing, and a plain wall hole (a garage
+  opening with no trim) now builds.
 
 ---
 
@@ -76,6 +94,8 @@ Hover a wall and click to place. **Shift** centres it on the wall. Type a size w
 (**36x60**). Everything placed in one go is linked: change a setting on one and they all
 change, each keeping its own place along its wall.
 
+Garage doors are on the **Door** card: pick **Garage door** or **Single garage door**.
+
 ## Kitchen
 
 | | |
@@ -92,6 +112,11 @@ another cabinet or back to back with it.
 Set a cabinet's top zone to **Sink** and the countertop over it adds a sink to suit. A
 countertop's **Sinks** tab holds its sinks' settings.
 
+![A kitchen run: a drawer base, door bases, a sink base with an undermount sink in the countertop, upper cabinets and a tall pantry](img/archwerks/kitchen.png)
+
+*Base cabinets snapped side by side on a wall, one **Countertop** over all of them (the sink
+base gave it its sink), uppers above, and a tall pantry at the end.*
+
 ---
 
 ## Editing
@@ -99,6 +124,17 @@ countertop's **Sinks** tab holds its sinks' settings.
 Select an Archwerks object: its settings are in the Attribute Manager. Drag its handles with
 the **Move** tool or **AW Edit Dimensions**, where you can also click a dimension and type a
 value.
+
+![A selected wall showing its live dimensions: each wall's length, every opening's size, the corner angles, and the orange drag handles](img/archwerks/wall-dimensions.png)
+
+*A selected wall shows its dimensions live: each wall's length, every opening's size and the
+corner angles. The orange arrows are its handles.*
+
+![A selected window showing its own guides in orange: the gaps to either side, its width, its sill height and its height](img/archwerks/window-guides.png)
+
+*Select a window or door and its own guides take over, in orange: the gap to either side, its
+width, its sill and its height. Drag a handle, or click a number in **AW Edit Dimensions** and
+type a new one.*
 
 | | |
 |---|---|
